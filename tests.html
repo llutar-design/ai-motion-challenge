@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; object-src 'none'">
+  <title>AI 모션 챌린지 단위 테스트</title>
+  <link rel="icon" href="data:,">
+  <style>body { background: #050b26; color: #f2f6ff; font-family: "Malgun Gothic", sans-serif; padding: 1.5rem; } pre { font: 14px/1.6 Consolas, monospace; white-space: pre-wrap; }</style>
+</head>
+<body>
+  <h1>AI 모션 챌린지 — 판정 로직 단위 테스트</h1>
+  <p>가상 관절 좌표로 자세·충돌·머무르기·캘리브레이션을 검사합니다(실제 게임은 카메라 관절 좌표로 판정).</p>
+  <div id="out">실행 중...</div>
+  <script type="module" src="src/tests/main.test.js"></script>
+</body>
+</html>

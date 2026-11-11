@@ -1,0 +1,19 @@
+{
+  "notice": "그림은 직접 그린 창작 그림이며 실제 유물·유적의 모습과 다를 수 있어요.",
+  "zones": [
+    { "id": "palace", "name": "사비 궁궐 터", "intro": "백제의 마지막 도읍 사비(지금의 부여)로 떠나요!" },
+    { "id": "temple", "name": "정림사 탑 마을", "intro": "오래된 돌탑이 서 있는 절 마을이에요." },
+    { "id": "fortress", "name": "부소산성 숲길", "intro": "도읍을 지키던 산성의 숲길을 걸어요." }
+  ],
+  "treasures": [
+    { "id": "roof-tile", "zone": "palace", "icon": "tile", "name": "연꽃무늬 수막새", "desc": "지붕 끝 기와를 연꽃무늬로 꾸민 기와예요. 백제 사람들은 연꽃무늬를 아름답게 새겼어요." },
+    { "id": "brick", "zone": "palace", "icon": "brick", "name": "산수무늬 벽돌", "desc": "산과 나무, 구름을 새긴 백제의 무늬 벽돌이에요. 부여에서 발견되었어요." },
+    { "id": "lotus-pond", "zone": "palace", "icon": "lotus", "name": "궁남지 연꽃", "desc": "궁남지는 백제 사비 시기에 만든 연못으로 알려져 있어요. 여름이면 연꽃이 가득 피어요." },
+    { "id": "pagoda", "zone": "temple", "icon": "pagoda", "name": "정림사지 오층석탑", "desc": "부여 정림사 터에 있는 백제의 돌탑이에요. 오랜 세월을 견디고 지금도 서 있어요." },
+    { "id": "incense", "zone": "temple", "icon": "incense", "name": "백제금동대향로", "desc": "1993년 부여 능산리 절터에서 발견된 백제의 향로예요. 뚜껑에 산과 동물, 악사들이 새겨져 있어요." },
+    { "id": "lantern", "zone": "temple", "icon": "lantern", "name": "연꽃 등불", "desc": "절 마을을 밝히는 등불을 상상해서 그린 보물이에요(창작)." },
+    { "id": "wall-stone", "zone": "fortress", "icon": "wall", "name": "산성 성벽 돌", "desc": "부소산성은 사비 도읍을 지키던 산성이에요. 흙과 돌로 단단하게 쌓았어요." },
+    { "id": "scroll", "zone": "fortress", "icon": "scroll", "name": "서동요 두루마리", "desc": "서동요는 백제 무왕이 어릴 때 지었다고 전해지는 노래예요(전해 오는 이야기)." },
+    { "id": "boat", "zone": "fortress", "icon": "boat", "name": "백마강 나룻배", "desc": "부여를 흐르는 백마강을 오가던 배를 상상해서 그린 보물이에요(창작)." }
+  ]
+}

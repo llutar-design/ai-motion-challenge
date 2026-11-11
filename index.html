@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 외부 네트워크 전면 차단: 같은 출처(127.0.0.1) 파일만 불러올 수 있다 -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; connect-src 'self'; worker-src 'self' blob:; font-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <title>AI 모션 챌린지 | AI MOTION CHALLENGE</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles/app.css">
+</head>
+<body>
+  <div id="app" data-screen="boot" data-layout="portrait" data-fit="cover" data-effects="normal" data-guide="off">
+    <header id="topbar">
+      <div class="brand">🤖 AI 모션 챌린지</div>
+      <div id="tb-game" class="tb-item"></div>
+      <div id="tb-round" class="tb-item"></div>
+      <div id="tb-lives" class="tb-item"></div>
+      <div id="tb-time" class="tb-item"></div>
+      <div id="badge-alt" class="badge" hidden>⌨ 대체 조작</div>
+      <div id="badge-seated" class="badge" hidden>🪑 앉아서</div>
+      <div id="badge-demo" class="badge demo" hidden>DEMO</div>
+      <div id="cam-indicator" hidden>● 카메라 · 저장 안 함</div>
+      <button id="btn-exit" class="exit-btn" type="button">⏻ 종료</button>
+      <button id="btn-gear" class="gear" type="button" title="교사용 관리자 (길게 누르기 또는 F2)">⚙</button>
+    </header>
+
+    <main id="stage">
+      <aside id="side"></aside>
+      <section id="view-wrap">
+        <canvas id="view" width="1280" height="720"></canvas>
+        <div id="title-cards" hidden></div>
+        <div id="cursors"></div>
+        <div id="calib-panel" hidden></div>
+        <div id="banner" class="banner" hidden></div>
+        <div id="big-grade" hidden></div>
+        <div id="popup" hidden></div>
+        <div id="center-msg" hidden></div>
+        <div id="countdown" hidden></div>
+        <div id="demo-mark" hidden>DEMO · 가상 학생 시연 (실제 판정 아님)</div>
+        <div id="diag" hidden></div>
+      </section>
+    </main>
+
+    <footer id="hud">
+      <div class="stat"><span>점수</span><b id="val-score">0</b></div>
+      <div class="stat"><span>콤보</span><b id="val-combo">0</b></div>
+      <div class="meter" id="meter-acc"><span>정확도</span><div class="bar"><i id="bar-acc"></i></div><b id="val-acc">-</b></div>
+      <button id="btn-pause" class="small-btn" type="button">⏸ 일시정지</button>
+      <div class="progress"><i id="bar-progress"></i></div>
+    </footer>
+
+    <div id="overlay" hidden></div>
+    <div id="dialog" hidden></div>
+    <div id="admin" hidden></div>
+    <div id="blackout" hidden><p>화면 숨김 · H 키로 다시 표시</p></div>
+    <video id="cam" playsinline muted></video>
+  </div>
+  <noscript>이 프로그램은 자바스크립트가 필요합니다.</noscript>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>

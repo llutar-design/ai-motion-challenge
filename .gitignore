@@ -1,0 +1,5 @@
+# 브라우저 전용 프로필(카메라 권한 등 개인 PC 정보) — 절대 올리지 않음
+.browser-profile/
+# 로컬 시험 결과·배포 산출물
+test-output/
+dist/
